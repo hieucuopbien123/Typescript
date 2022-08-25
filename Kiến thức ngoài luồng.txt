@@ -1,0 +1,5 @@
+-> Typescript là 1 dự án mã nguồn mở phát triển bởi Microsoft, có thể coi là phiên bản nâng cao của JS. Typescript dễ phát triển dự án lớn hơn, có thêm lập trình hướng đối tượng, các tính năng của JS vẫn có đầy đủ trong TS, mã nguồn mở. Các chương trình chạy được JS thg cx chạy đc TS, có thể trộn lẫn cú pháp bởi kết quả sau khi biên dịch thì TS sẽ xuất ra mã JS. Có thể dùng cú pháp của JS để code TS thoải mái. 
+Code của TS mạch lạc hơn JS rất nhiều và nếu muốn học sâu hơn như AngularJS thì người ta khuyến khích dùng TS
+
+TS cũng có lợi hơn ở chỗ nó báo lỗi ngay trên hệ thống or khi compile, nhưng cồng kềnh hơn khi phải biên dịch ra JS
+

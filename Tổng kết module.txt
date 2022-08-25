@@ -1,0 +1,30 @@
+Typescript:
+
+
+
+# Basic
+-> Setup
+npm install -g typescript => với các editor hỗ trợ sẵn typescript thì k cần phải cài như VS chẳng hạn vì Microsoft tạo ra typescript nên họ tích hợp sẵn luôn trong VS của họ
+
+biên dịch: tsc <link tới file .ts>  => sinh ra file js sau biên dịch
+=> có thể sang file js để xem code nó như nào
+
+Để dùng typescript với react, ta phải uninstall cái global create-react-app hiện tại và cài đặt lại:
+yarn global remove create-react-app 
+yarn create react-app my-app --template typescript
+Còn nếu muốn add vào 1 dự án đã có sẵn thì dùng:
+yarn add typescript @types/node @types/react @types/react-dom @types/jest
+sau đó đổi tên các file thành .ts là xong
+
+Bộ CRA (create-react-app) là bộ tạo dự án react nổi tiếng nhất
+
+Dùng npm:
+npx create-react-app <name-project> --template typecript
+Nếu ta từng cái global CRA thì phải npm uninstall -g create-react-app đi trước
+
+=> Thực tế khi dùng với html css js thuần mà kèm typescript vào lỗi rất nhiều. Nên dùng với các dự án chuẩn chuyên typescript thay thế hoàn toàn JS thôi
+
+-> Dùng typescript với React
+File tsconfig.json chứa thông tin config của typescript, ta có thể chỉnh phiên bản hay các thứ
+
+Typescript thực chất làm JS chặt chẽ hơn về type thôi. Trong ReactJS có lib props-type cũng giúp kiểm soát type các component ok

@@ -1,6 +1,9 @@
-// // Thêm vào fix lỗi promise dùng bản es2015 nhưng lại đẻ ra lỗi khác
-// {
-//     "compilerOptions": {
-//         "lib": [ "es2015" ]
-//     }
-// }
+{
+    "compilerOptions": {
+        "lib": [
+            "es2015", // fix lỗi promise
+            "DOM", // fix lỗi console
+        ],
+        "target": "es2015",
+    }
+}

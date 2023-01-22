@@ -148,3 +148,17 @@ async function testAsync(): Promise<GetResponse>{
         a: 10
     }
 }
+
+// # Dùng ! or ? 
+let x: string | undefined
+function printString(str ?: string){
+    console.log("Hàm này nhận string or undefined đều được dựa vào dấu ?:")
+}
+printString(x);
+
+let word: string | null = null
+word = "Hello"
+function printString2(str: String){
+    console.log("Dùng ! để đảm bảo giá trị luôn k null or undefined, nếu null or undefined sẽ báo lỗi")
+}
+printString2(word!); // chỉ là 1 cách gọn hơn if else

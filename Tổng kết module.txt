@@ -56,3 +56,13 @@ File .d.ts luôn được sinh ra tự động trong typescript, nhưng khi dự
     "@/public/*": ["./public/*"]
 }
 
+# Dùng ! or ?
+Trong HTML từng thẻ đều có type riêng như HTMLElement
+
+
+
+# Setup file tsconfig.json
+=> refer tới "Projects / MoveWorld"
+
+Lệnh tsc sẽ compile mặc định mọi file ts kể từ thư mục hiện tại, nếu chạy cụ thể tsc 1 file nào đó như bth sẽ bỏ qua tsconfig.json => điều này làm 1 vài options cần có bị thiếu dẫn đến lỗi k thể compile trong 1 số TH
+VD: Viết tsconfig.json -> compilerOptions có "outDir": "js" -> chạy lệnh tsc (k có tham số gì hết mới được) => toàn bộ file js được compile ra trong thư mục js

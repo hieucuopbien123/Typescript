@@ -14,7 +14,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     function verb(n) { return function (v) { return step([n, v]); }; }
     function step(op) {
         if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
+        while (g && (g = 0, op[0] && (_ = 0)), _) try {
             if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
             if (y = 0, t) op = [op[0] & 2, t.value];
             switch (op[0]) {
@@ -166,3 +166,15 @@ function testAsync() {
         });
     });
 }
+// # Dùng ! or ? 
+var x;
+function printString(str) {
+    console.log("Hàm này nhận string or undefined đều được dựa vào dấu ?:");
+}
+printString(x);
+var word = null;
+word = "Hello";
+function printString2(str) {
+    console.log("Dùng ! để đảm bảo giá trị luôn k null or undefined, nếu null or undefined sẽ báo lỗi");
+}
+printString2(word); // chỉ là 1 cách gọn hơn if else

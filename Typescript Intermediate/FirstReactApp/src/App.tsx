@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import './App.css';
+import { a } from "./my-module"; // import từ file ts k được có extention.ts
 
-// Class component => kqtr
+// Class component
 interface StateButton {
   stateLight: boolean,
 }
@@ -47,6 +48,7 @@ const Test: React.FC<Props> = (props) => {
   return(
     <div>
       {props.isStudent.toString()}
+      {a}
     </div>
   )
 }

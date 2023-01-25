@@ -92,7 +92,7 @@ console.log(stringArray);
 // Chú ý sự khác nhau: arrow function thì biến có type là 1 function. Function bth thì type của nó phải viết 
 // theo GT trả về
 
-// kế thừa interface
+// # Type và interface / Dùng interface / Interface kế thừa interface
 interface A<T> {
     a: T
 }
@@ -119,6 +119,8 @@ function functionB<T>(t: T): Promise<T> {
 }
 functionB<number>(10).then(console.log);
 
+// # Type và interface
+// Dùng interface / Class implements interface
 interface IPlayer {
     id: String;
     name: String;

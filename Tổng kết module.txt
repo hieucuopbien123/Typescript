@@ -3,6 +3,11 @@ Typescript:
 
 
 # Basic
+Khi dùng typescript mà dùng 1 package nào đó bị lỗi type, chắc chắn các package đó sẽ có type riêng cho typescript mà ta phải cài lib đó thì mới hết lỗi4
+
+-> Dùng as
+Trong đa số các TH, có thể dùng type any or từ khóa as any tránh lỗi, thì dùng nó chả khác gì js
+
 -> Setup
 npm install -g typescript => với các editor hỗ trợ sẵn typescript thì k cần phải cài như VS chẳng hạn vì Microsoft tạo ra typescript nên họ tích hợp sẵn luôn trong VS của họ
 
@@ -66,3 +71,31 @@ Trong HTML từng thẻ đều có type riêng như HTMLElement
 
 Lệnh tsc sẽ compile mặc định mọi file ts kể từ thư mục hiện tại, nếu chạy cụ thể tsc 1 file nào đó như bth sẽ bỏ qua tsconfig.json => điều này làm 1 vài options cần có bị thiếu dẫn đến lỗi k thể compile trong 1 số TH
 VD: Viết tsconfig.json -> compilerOptions có "outDir": "js" -> chạy lệnh tsc (k có tham số gì hết mới được) => toàn bộ file js được compile ra trong thư mục js
+
+
+
+# Type và interface
+Ở phiên bản mới nhất, type và interface k có khác biệt nhiều, đều có thể dùng để tạo user-defined type. 2 cái chỉ có 1 vài tính chất khác biệt
+
+-> Dùng interface: giúp ta định nghĩa ra type mới cho typescript mà có thể dùng cho biến
+
+--> Tự động merge
+--> Interface kế thừa interface
+--> Class implements interface
+
+-> Dùng type: 
+--> Giao, hợp
+--> Tuple
+--> Dùng computed value định nghĩa type
+
+=> Thg dùng interface, khi nào có TH khác yêu cầu mới dùng type. Interface thg dùng để tạo type cho mảng or object
+
+-> Dùng type aliases: chỉ là 1 cách đặt 1 cái tên khác cho type có sẵn => ít dùng
+VD: type Second = number; let time: Second = 10; // Tương đương với dùng time: number
+
+
+
+# Other
+-> Typescript playground: https://www.typescriptlang.org/play giúp thao tác nhanh test typescript phiên bản mới nhất
+
+

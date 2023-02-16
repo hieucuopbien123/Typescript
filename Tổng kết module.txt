@@ -93,6 +93,12 @@ VD: Viết tsconfig.json -> compilerOptions có "outDir": "js" -> chạy lệnh 
 -> Dùng type aliases: chỉ là 1 cách đặt 1 cái tên khác cho type có sẵn => ít dùng
 VD: type Second = number; let time: Second = 10; // Tương đương với dùng time: number
 
+-> Number và number trong Typescript:
+Number là tên 1 interface trong Typescript. Dùng nó để chỉ 1 type chứ kp 1 giá trị. VD: let foo: Number;
+Nó khác với: const someNum = Number(someString); là đang dùng global.Number constructor của JS thuần
+
+Còn number là chỉ giá trị thuộc kiểu gì mới dùng được bth. VD: const theNum: number = 6;
+=> Tương tự với các kiểu khác như string và String,...
 
 
 # Other

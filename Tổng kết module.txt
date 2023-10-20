@@ -100,6 +100,17 @@ Nó khác với: const someNum = Number(someString); là đang dùng global.Numb
 Còn number là chỉ giá trị thuộc kiểu gì mới dùng được bth. VD: const theNum: number = 6;
 => Tương tự với các kiểu khác như string và String,...
 
+Tức là:
+let foo: Number; => biến có kiểu number
+let foo: number = 6; => giá trị của biến phải luôn là number
+
+-> ***Khi nào dùng type và interface:
+Thường thì dùng cái gì cũng đươc nhưng nếu muốn có 1 sự phân hóa rạch ròi thì:
+- type định nghĩa ra các kiểu dữ liệu phức tạp mới như "string | number", kết hợp nhiều loại toán tử tạo ra 1 kiểu phức tạp mà interface k làm được. 
+- interface thường dùng khi cần định nghĩa 1 đối tượng trong lập trình hướng đối tượng. Nó có thẻ kế thừa và implements (type k có các tính chất này của hướng đối tượng)
+- class chỉ đối tượng cụ thẻ có thuộc tính và hành vi, dùng khi lập trình hướng đối tượng. Mọi thuộc tính đều phải được khai báo giá trị khởi tạo trong constructor
+
+
 
 # Other
 -> Typescript playground: https://www.typescriptlang.org/play giúp thao tác nhanh test typescript phiên bản mới nhất

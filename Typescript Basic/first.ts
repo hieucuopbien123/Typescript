@@ -45,7 +45,7 @@ let u: undefined = undefined
 {
     const n: null = null;
 }
-//các kiểu khai báo đều bị giới hạn trong blockscoped của nó, k dùng được ngoài phạm vi đó
+// Các kiểu khai báo đều bị giới hạn trong blockscoped của nó, k dùng được ngoài phạm vi đó
 
 var myAdd = function(x: number = 2, y = 2, z ?: number): number { return x+y; }; // z có thể có hoặc k
 function test(x, ...paramsConLai: string[]){ } // k khai báo type thì mặc định là kiểu any => nên nói rõ type
